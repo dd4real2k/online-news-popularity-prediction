@@ -1,34 +1,59 @@
 # 📊 Online News Popularity Prediction
 
-## 🚀 Project Overview
-This project analyses and predicts the popularity of online news articles using **Python, SQL, and Machine Learning**. The goal is to uncover key factors that drive engagement and build predictive models for article shares.
+A complete end-to-end data science project using **Python, SQL, and Machine Learning** to analyse and predict the popularity of online news articles.
 
-The dataset contains over **39,000 articles** with features related to content, publishing patterns, and metadata.
+---
+
+## 🚀 Project Overview
+This project explores what drives engagement in online news by analysing over **39,000 articles** and building predictive models to estimate social media shares.
+
+The goal is to simulate a real-world scenario where publishers can **predict article performance before publication** and optimise their content strategy.
 
 ---
 
 ## 🎯 Objectives
-- Perform data cleaning and preprocessing
-- Conduct SQL-based exploratory analysis
-- Visualise patterns in article engagement
-- Build machine learning models to predict popularity
-- Identify key drivers of article shares
+- Clean and prepare a real-world dataset
+- Perform SQL-based exploratory analysis
+- Visualise engagement trends
+- Build machine learning models to predict article popularity
+- Identify key factors influencing article shares
 
 ---
 
 ## 🛠️ Tech Stack
-- Python (Pandas, NumPy, Scikit-learn)
-- SQL (SQLite)
-- Matplotlib & Seaborn
-- Machine Learning (Linear Regression, Random Forest)
-- Git & GitHub
+- **Python**: Pandas, NumPy, Scikit-learn
+- **SQL**: SQLite
+- **Visualisation**: Matplotlib, Seaborn
+- **Machine Learning**: Linear Regression, Random Forest
+- **Version Control**: Git & GitHub
 
 ---
 
 ## 📁 Project Structure
 
-
----
+```text
+online-news-popularity-prediction/
+│
+├── data/
+│   ├── OnlineNewsPopularity.csv
+│   └── cleaned_online_news.csv
+│
+├── notebooks/
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_sql_analysis.ipynb
+│   ├── 03_eda_visualisation.ipynb
+│   └── 04_model_building.ipynb
+│
+├── sql/
+│   └── analysis_queries.sql
+│
+├── src/
+│   └── random_forest_model.pkl
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 
 ## 🧹 Data Cleaning & Preparation
 - Removed irrelevant columns (`url`, `timedelta`)
