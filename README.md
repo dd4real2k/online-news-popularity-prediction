@@ -133,3 +133,6 @@ Top factors influencing article popularity:
 
 ### Feature Importance
 ![Feature Importance](images/feature_importance.png)
+
+### Model Comparison (RMSE)
+![Model Comparison](images/model_comparison.png)
