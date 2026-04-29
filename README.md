@@ -1,8 +1,14 @@
 # 📊 Online News Popularity Prediction
+🚀 End-to-End Machine Learning Project | Regression | Deployment (Streamlit)
 
 A complete end-to-end data science project using **Python, SQL, and Machine Learning** to analyse and predict the popularity of online news articles.
 
 ---
+
+## 🧩 Problem Statement
+
+Online publishers need to understand what makes content go viral.
+This project aims to predict the number of social media shares an article will receive based on its content and metadata.
 
 ## 🚀 Project Overview
 This project explores what drives engagement in online news by analysing over **39,000 articles** and building predictive models to estimate social media shares.
@@ -25,6 +31,7 @@ The goal is to simulate a real-world scenario where publishers can **predict art
 - **SQL**: SQLite
 - **Visualisation**: Matplotlib, Seaborn
 - **Machine Learning**: Linear Regression, Random Forest
+- **Deployment**: Streamlit
 - **Version Control**: Git & GitHub
 
 ---
@@ -59,6 +66,7 @@ online-news-popularity-prediction/
 │   ├── predict.py
 │   └── random_forest_model.pkl
 │
+├── app.py
 ├── README.md
 ├── requirements.txt
 └── .gitignore
@@ -106,17 +114,22 @@ Key findings:
 - RMSE (Root Mean Squared Error)
 - R² Score
 
-**Result**
-Random Forest outperformed Linear Regression, capturing non-linear relationships in the data.
-
 | Model | RMSE | R² Score |
 |---|---:|---:|
 | Linear Regression | 0.865 | 0.127 |
 | Random Forest | 0.849 | 0.160 |
 
-The Random Forest model outperformed Linear Regression, achieving a lower RMSE and higher R² score. This indicates that non-linear models are better suited for capturing the complex relationships between article features and popularity.
+The Random Forest model outperformed Linear Regression, achieving a lower RMSE and higher R² score.
+This indicates that non-linear models are better suited for capturing complex relationships in the data.
 
-A prediction script (`src/predict.py`) is included to demonstrate how the trained model can be used for real-world predictions.
+📌 Random Forest was selected due to its ability to handle high-dimensional data and capture non-linear patterns without extensive feature engineering.
+
+📌 A prediction script (`src/predict.py`) is included to demonstrate real-world model usage.
+
+## ⚠️ Limitations
+- Low R² scores indicate that article popularity is influenced by external factors (e.g., timing, trends, audience behaviour)
+- Dataset does not capture real-time user interactions
+- Model performance may vary on unseen data
 
 ## 🔍 Feature Importance
 
@@ -131,7 +144,7 @@ Top factors influencing article popularity:
 - Articles with more keywords tend to perform better
 - Technology and entertainment categories drive higher engagement
 - Mid-week publishing often results in more shares
-- Multimedia improves visibility but not always engagement
+- Multimedia improves visibility but does not always guarantee higher engagement
 
 ## 💼Business Impact
 
@@ -161,15 +174,13 @@ pip install -r requirements.txt
 python src/predict.py
 ```
 
-4. Run the App
+4. Run the Dashboard
 ```
 streamlit run app.py
 ```
 
 ## 🌐 Live Demo
-
 Try the interactive dashboard here:
-
 [Launch Streamlit App](https://online-news-prediction.streamlit.app/)
 
 ## 📌 Future Improvements
@@ -188,3 +199,9 @@ Try the interactive dashboard here:
 
 ### Model Comparison (RMSE)
 ![Model Comparison](images/model_comparison.png)
+
+## 📌 Future Improvements
+Hyperparameter tuning (GridSearchCV)
+API deployment using FastAPI
+Integration with real-time social media data
+Model monitoring and retraining
