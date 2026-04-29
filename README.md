@@ -100,6 +100,11 @@ Key findings:
 **Result**
 Random Forest outperformed Linear Regression, capturing non-linear relationships in the data.
 
+| Model | RMSE | R² Score |
+|---|---:|---:|
+| Linear Regression | add value | add value |
+| Random Forest | add value | add value |
+
 ## 🔍 Feature Importance
 
 Top factors influencing article popularity:
@@ -120,3 +125,11 @@ Top factors influencing article popularity:
 - Streamlit dashboard for live predictions
 - API deployment (FastAPI)
 - Integration with real-time data sources
+
+## 📊 Visual Insights
+
+### Distribution of Shares
+![Shares Distribution](images/shares_distribution.png)
+
+### Feature Importance
+![Feature Importance](images/feature_importance.png)
