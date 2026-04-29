@@ -116,6 +116,8 @@ Random Forest outperformed Linear Regression, capturing non-linear relationships
 
 The Random Forest model outperformed Linear Regression, achieving a lower RMSE and higher R² score. This indicates that non-linear models are better suited for capturing the complex relationships between article features and popularity.
 
+A prediction script (`src/predict.py`) is included to demonstrate how the trained model can be used for real-world predictions.
+
 ## 🔍 Feature Importance
 
 Top factors influencing article popularity:
@@ -124,12 +126,40 @@ Top factors influencing article popularity:
 - Social media references
 - Multimedia usage
 
-##  Business Impact
-- This project demonstrates how data-driven insights can:
+## 💡 Key Insights
+
+- Articles with more keywords tend to perform better
+- Technology and entertainment categories drive higher engagement
+- Mid-week publishing often results in more shares
+- Multimedia improves visibility but not always engagement
+
+## 💼Business Impact
+
+This project demonstrates how data-driven insights can:
+
 - Improve content strategy
 - Increase audience engagement
 - Support editorial decision-making
 - Predict high-performing articles
+
+## ▶️ How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/dd4real2k/online-news-popularity-prediction.git
+cd online-news-popularity-prediction
+```
+
+2. Install dependencies:
+```
+pip install -r requirements.txt
+```
+3. Run the prediction script:
+
+```
+python src/predict.py
+```
 
 ## 📌 Future Improvements
 - Hyperparameter tuning (GridSearchCV)
