@@ -35,12 +35,16 @@ The goal is to simulate a real-world scenario where publishers can **predict art
 online-news-popularity-prediction/
 │
 ├── data/
-│   ├── OnlineNewsPopularity.csv
-│   └── cleaned_online_news.csv
-images/
-├── shares_distribution.png
-├── feature_importance.png
-└── model_comparison.png
+│   ├── raw/
+│   │   └── OnlineNewsPopularity.csv
+│   │
+│   └── processed/
+│       └── cleaned_online_news.csv
+│
+├── images/
+│   ├── shares_distribution.png
+│   ├── feature_importance.png
+│   └── model_comparison.png
 │
 ├── notebooks/
 │   ├── 01_data_cleaning.ipynb
@@ -51,9 +55,9 @@ images/
 ├── sql/
 │   └── analysis_queries.sql
 │
-src/
-├── predict.py
-└── random_forest_model.pkl
+├── src/
+│   ├── predict.py
+│   └── random_forest_model.pkl
 │
 ├── README.md
 ├── requirements.txt
@@ -107,8 +111,10 @@ Random Forest outperformed Linear Regression, capturing non-linear relationships
 
 | Model | RMSE | R² Score |
 |---|---:|---:|
-| Linear Regression | add value | add value |
-| Random Forest | add value | add value |
+| Linear Regression | 0.865 | 0.127 |
+| Random Forest | 0.849 | 0.160 |
+
+The Random Forest model outperformed Linear Regression, achieving a lower RMSE and higher R² score. This indicates that non-linear models are better suited for capturing the complex relationships between article features and popularity.
 
 ## 🔍 Feature Importance
 
