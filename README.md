@@ -170,7 +170,7 @@ streamlit run app.py
 
 Try the interactive dashboard here:
 
-[Launch Streamlit App](YOUR_STREAMLIT_LINK_HERE)
+[Launch Streamlit App](https://online-news-prediction.streamlit.app/)
 
 ## 📌 Future Improvements
 - Hyperparameter tuning (GridSearchCV)
