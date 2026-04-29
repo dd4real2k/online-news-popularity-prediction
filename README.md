@@ -161,6 +161,17 @@ pip install -r requirements.txt
 python src/predict.py
 ```
 
+4. Run the App
+```
+streamlit run app.py
+```
+
+## 🌐 Live Demo
+
+Try the interactive dashboard here:
+
+[Launch Streamlit App](YOUR_STREAMLIT_LINK_HERE)
+
 ## 📌 Future Improvements
 - Hyperparameter tuning (GridSearchCV)
 - Streamlit dashboard for live predictions
