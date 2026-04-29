@@ -37,6 +37,10 @@ online-news-popularity-prediction/
 ├── data/
 │   ├── OnlineNewsPopularity.csv
 │   └── cleaned_online_news.csv
+images/
+├── shares_distribution.png
+├── feature_importance.png
+└── model_comparison.png
 │
 ├── notebooks/
 │   ├── 01_data_cleaning.ipynb
@@ -47,8 +51,9 @@ online-news-popularity-prediction/
 ├── sql/
 │   └── analysis_queries.sql
 │
-├── src/
-│   └── random_forest_model.pkl
+src/
+├── predict.py
+└── random_forest_model.pkl
 │
 ├── README.md
 ├── requirements.txt
